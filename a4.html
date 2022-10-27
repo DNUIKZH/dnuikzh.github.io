@@ -99,6 +99,8 @@
             /* 图标上移 */
             transform: translateY(-5px);
             color: red;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent; 
         }
 
         .bnav ul li a .text {
@@ -110,12 +112,16 @@
             transition: 0.5s;
             /* 默认隐藏 */
             transform: scale(0);
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent; 
         }
 
         .bnav ul li.active a .text {
             /* 选中,文字显示 */
             transform: scale(1);
             padding-bottom: 0;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent; 
         }
     </style>
     <script src="font/iconfont.js"></script>
