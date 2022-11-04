@@ -28,8 +28,8 @@ let track = document.createElement('audio');
 let All_song = [
    {
      name: "&nbsp&nbspHow to love",
-     path: "./音乐播放器/music/howtolove.mp3",
-     img: "./音乐播放器/img/howtolove.jpg",
+     path: "../音乐播放器/music/howtolove.mp3",
+     img: "../音乐播放器/img/howtolove.jpg",
      singer: "Cash Cash Sofia Reyes"
    },
    {
@@ -46,8 +46,8 @@ let All_song = [
    },
    {
      name: "&nbsp&nbsp&nbsp&nbsp&nbsp失眠飞行",
-     path: "./音乐播放器/music/失眠飞行.mp3",
-     img: "./音乐播放器/img/失眠飞行.jpg",
+     path: "../音乐播放器/music/失眠飞行.mp3",
+     img: "../音乐播放器/img/失眠飞行.jpg",
      singer: "接个吻开一枪"
    }
 ];
