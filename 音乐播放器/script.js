@@ -28,8 +28,8 @@ let track = document.createElement('audio');
 let All_song = [
    {
      name: "How to love",
-     path: "./music/howtolove.mp3",
-     img: "./img/howtolove.jpg",
+     path: "music/howtolove.mp3",
+     img: "img/howtolove.jpg",
      singer: "Cash Cash Sofia Reyes"
    },
    {
