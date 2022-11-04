@@ -28,26 +28,26 @@ let track = document.createElement('audio');
 let All_song = [
    {
      name: "&nbsp&nbspHow to love",
-     path: "music/howtolove.mp3",
-     img: "img/howtolove.jpg",
+     path: "./音乐播放器/music/howtolove.mp3",
+     img: "./音乐播放器/img/howtolove.jpg",
      singer: "Cash Cash Sofia Reyes"
    },
    {
      name: "带我去找夜生活",
-     path: "music/带我去找夜生活.mp3",
-     img: "img/告五人.jpg",
+     path: "./音乐播放器/music/带我去找夜生活.mp3",
+     img: "./音乐播放器/img/告五人.jpg",
      singer: "告五人"
    },
    {
      name: "Normal No More",
-     path: "music/独到.mp3",
-     img: "img/独到.jpg",
+     path: "./音乐播放器/music/独到.mp3",
+     img: "./音乐播放器/img/独到.jpg",
      singer: "TYSM"
    },
    {
      name: "&nbsp&nbsp&nbsp&nbsp&nbsp失眠飞行",
-     path: "music/失眠飞行.mp3",
-     img: "img/失眠飞行.jpg",
+     path: "./音乐播放器/music/失眠飞行.mp3",
+     img: "./音乐播放器/img/失眠飞行.jpg",
      singer: "接个吻开一枪"
    }
 ];
