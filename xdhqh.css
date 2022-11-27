@@ -1,0 +1,79 @@
+body {
+    position: relative;
+}
+
+.tab-content {
+    background-image: repeating-linear-gradient(to bottom right, rgb(251, 154, 154), 2em, rgb(250, 239, 239), rgb(248, 167, 167));
+    height: 300vh;
+    width: 100%;
+    position: fixed;
+}
+
+.tab-content div {
+    color: aliceblue;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 30vh;
+    display: none;
+}
+
+.pl {
+    width: 20vw;
+    z-index: 9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 70px;
+    width: 500px;
+    margin: 10px auto 0 auto;
+}
+
+.parent {
+    position: absolute;
+    width: 8%;
+    top: 5vh;
+
+}
+
+.search {
+    width: 82vw;
+    height: 4vh;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    padding-left: 10vw;
+    position: absolute;
+}
+
+.xj {
+    width: 1.7rem;
+    position: fixed;
+    top: 5.3vh;
+    right: 17vw;
+}
+
+.ss {
+    width: 1.2rem;
+    position: fixed;
+    top: 5.7vh;
+    left: 7vw;
+}
+
+.sm {
+    width: 1.5rem;
+    position: fixed;
+    top: 5.5vh;
+    right: 7vw;
+}
+
+.jd{
+    position: fixed;
+    width: 2rem;
+    top: .5vh;
+    left: 5vw;
+}
