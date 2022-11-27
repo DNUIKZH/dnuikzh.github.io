@@ -130,6 +130,8 @@
     </style>
     <script src="../font/iconfont.js"></script>
     <link rel="shortcut icon" href="title.ico">
+     <link rel="stylesheet" href="./xdhqh.css">
+     <script src="./xdh.js"></script>
 </head>
 
 <body>
@@ -138,8 +140,8 @@
 你的浏览器不支持音乐插件.
 
 </audio>
-    <nav class="bnav">
-        <ul>
+      <nav class="bnav">
+        <ul class="itemz">
             <li class="item">
                 <a class="a1" href="#">
                     <svg class="icon nc" aria-hidden="true">
@@ -198,22 +200,27 @@
             </li>
         </ul>
     </nav>
+    <div class="contral">
+        <div class="tab-content">
+            <div>首页</div>
+            <div>新品</div>
+            <div>逛</div>
+            <div>购物车</div>
+            <div>我的</div>
+        </div>
+    </div>
     <script>
-        //获取所以的.item元素
-        let items = document.querySelectorAll(".item");
-        //设置当前选中样式的方法
+      let items = document.querySelectorAll(".item");
         function setActive() {
-            // 遍历所有.item元素,移除active样式
             items.forEach((item) => {
-                item.classList.remove("active");
+            item.classList.remove("active");
             })
-            // 为当前选中项添加active样式
             this.classList.add("active");
         }
-        // 遍历所有.item元素,分别为其设置点击事件
         items.forEach((item) => {
             item.addEventListener("click", setActive);
         })
+       
     </script>
 </body>
 
