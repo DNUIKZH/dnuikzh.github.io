@@ -17,8 +17,11 @@
             transition: 0.5s;
             z-index: 9;
         }
-        *{-webkit-tap-highlight-color: transparent;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
 
         body,
         ul,
@@ -41,7 +44,7 @@
             /* 固定定位 */
             left: 0;
             bottom: 0;
-            background-color:rgb(246, 246, 246);
+            background-color: rgb(246, 246, 246);
             width: 100%;
             z-index: 9;
             /* 用来设定固定定位的z轴 */
@@ -74,23 +77,21 @@
             letter-spacing: 1.5px;
             /* 字体间距 */
         }
-        .t4{text-indent:.2em}
-        .t2{text-indent:.05em}
-        .t3{text-indent:.02em}
 
-        .dot {
-            width: .5em;
-            height: .5em;
-            background-color: #f00;
-            position: fixed;
-            right: 10em;
-            top: .4em;
-            border-radius: 50%;
-            /* 圆角 */
-            z-index: 9;
+        .t4 {
+            text-indent: .2em
         }
 
-        .bnav ul li.active a .c{
+        .t2 {
+            text-indent: .05em
+        }
+
+        .t3 {
+            text-indent: .02em
+        }
+
+
+        .bnav ul li.active a .c {
             position: fixed;
             font-size: 30px;
             transform: scale(1);
@@ -99,13 +100,15 @@
             margin-bottom: -2em;
             margin-left: -1.01em;
         }
-        .bnav ul li .c{
+
+        .bnav ul li .c {
             position: fixed;
             transform: scale(0);
             margin-bottom: -3em;
             margin-left: -1.01em;
         }
-        .bnav ul li.active a .nc{
+
+        .bnav ul li.active a .nc {
             font-size: 30px;
             /* 图标上移 */
             color: red;
@@ -123,12 +126,17 @@
             /* 默认隐藏 */
             transform: scale(0);
         }
+
         .bnav ul li.active a .text {
             /* 选中,文字显示 */
             transform: scale(1);
             margin: 1px;
         }
-        
+        .contral ul li.active a  {
+            font-weight: bolder;
+            transition: .5s;
+        }
+
     </style>
     <link rel="stylesheet" href="./xdhqh.css">
     <script src="../font/iconfont.js"></script>
@@ -208,34 +216,60 @@
                         <a href="#"><img src="../jdimg/扫码.png" alt="" class="sm"></a>
                     </form>
                 </span>
+                <span class="syTabtext">
+                    <ul>
+                        <li class="syItem" style="padding-left: 1vw;"><a href=#">推荐</a></li>
+                        <li class="syItem"><a href="#">手机</a></li>
+                        <li class="syItem"><a href="#">家电</a></li>
+                        <li class="syItem"><a href="#">食品</a></li>
+                        <li class="syItem"><a href="#">生鲜</a></li>
+                        <li class="syItem"><a href="#">数码</a></li>
+                        <li class="syItem"><a href="#">电脑</a></li>
+                        <span class="fenlei"><img src="../jdimg/分类.png" alt="分类" ><p>分类</p></span>
+                    </ul>
+                </span>
                 <p>首页</p>
             </div>
             <div id="xp">
                 <p>新品</p>
             </div>
-            <div>
+            <div id="guang">
                 <p>逛</p>
             </div>
-            <div>
+            <div id="gwc">
                 <p>购物车</p>
             </div>
-            <div>
+            <div id="user">
                 <p>我的</p>
             </div>
         </div>
     </div>
     <script>
-      let items = document.querySelectorAll(".item");
+        let items = document.querySelectorAll(".item");
         function setActive() {
             items.forEach((item) => {
-            item.classList.remove("active");
+                item.classList.remove("active");
             })
             this.classList.add("active");
         }
         items.forEach((item) => {
             item.addEventListener("click", setActive);
         })
-       
+        //下导航遍历
+
+
+        let syItems = document.querySelectorAll(".syItem");
+        function setActive2() {
+            syItems.forEach((syItem) => {
+                syItem.classList.remove("active");
+            })
+            this.classList.add("active");
+        }
+        syItems.forEach((syItem) => {
+            syItem.addEventListener("click", setActive2);
+        })
+        //首页 tab字体遍历
+        
     </script>
 </body>
 
