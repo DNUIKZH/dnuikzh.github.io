@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -136,7 +137,12 @@
             font-weight: bolder;
             transition: .5s;
         }
-
+        /* 优先级最高才能初始就显示 */
+        .syTabtext .syItem .show{
+            font-weight: bolder;
+            
+            transition: 0.5s;
+        }
     </style>
     <link rel="stylesheet" href="./xdhqh.css">
     <script src="../font/iconfont.js"></script>
@@ -146,7 +152,7 @@
 <body>
     <nav class="bnav">
         <ul class="itemz">
-            <li class="item">
+            <li class="item active">
                 <a class="a1" href="#">
                     <svg class="icon nc" aria-hidden="true">
                         <use xlink:href="#icon-shouye4"></use>
@@ -206,7 +212,7 @@
     </nav>
     <div class="contral">
         <div class="tab-content">
-            <div style="display:block;" id="sy">
+            <div style="display:block;" class="fy">
                 <img src="../jdimg/京东.jpeg" class="jd">
                 <span class="sySearch">
                     <form action="" class="parent">
@@ -217,29 +223,29 @@
                     </form>
                 </span>
                 <span class="syTabtext">
-                    <ul>
-                        <li class="syItem" style="padding-left: 1vw;"><a href=#">推荐</a></li>
-                        <li class="syItem"><a href="#">手机</a></li>
-                        <li class="syItem"><a href="#">家电</a></li>
-                        <li class="syItem"><a href="#">食品</a></li>
-                        <li class="syItem"><a href="#">生鲜</a></li>
-                        <li class="syItem"><a href="#">数码</a></li>
-                        <li class="syItem"><a href="#">电脑</a></li>
+                    <ul class="syItem" >
+                        <li class="show" style="padding-left: 1vw;"><a href=#">推荐</a></li>
+                        <li ><a href="#">手机</a></li>
+                        <li ><a href="#">家电</a></li>
+                        <li ><a href="#">食品</a></li>
+                        <li ><a href="#">生鲜</a></li>
+                        <li ><a href="#">数码</a></li>
+                        <li ><a href="#">电脑</a></li>
                         <span class="fenlei"><img src="../jdimg/分类.png" alt="分类" ><p>分类</p></span>
                     </ul>
                 </span>
                 <p>首页</p>
             </div>
-            <div id="xp">
+            <div class="fy">
                 <p>新品</p>
             </div>
-            <div id="guang">
+            <div class="fy">
                 <p>逛</p>
             </div>
-            <div id="gwc">
+            <div class="fy">
                 <p>购物车</p>
             </div>
-            <div id="user">
+            <div class="fy">
                 <p>我的</p>
             </div>
         </div>
@@ -256,21 +262,22 @@
             item.addEventListener("click", setActive);
         })
         //下导航遍历
+        var contral=document.getElementsByClassName("contral")[0];
+        var tabcontent=contral.querySelector(".tab-content");
+        var fy=tabcontent.querySelector(".fy");
+        var syTabtext=fy.querySelector(".syTabtext")
+        var syItem=fy.querySelectorAll("li")
 
+        for(var i=0;i<syItem.length;i++){
+            syItem[i].index=i;//index 是自定义属性
+            syItem[i].onclick=function(){
+                for(var j=0;j<syItem.length;j++)[
+                    syItem[j].classList.remove("show")
+                ]
+                syItem[this.index].classList.add("show")
+            }
 
-        let syItems = document.querySelectorAll(".syItem");
-        function setActive2() {
-            syItems.forEach((syItem) => {
-                syItem.classList.remove("active");
-            })
-            this.classList.add("active");
         }
-        syItems.forEach((syItem) => {
-            syItem.addEventListener("click", setActive2);
-        })
-        //首页 tab字体遍历
-        
+        //首页字体循环
     </script>
 </body>
-
-</html>
