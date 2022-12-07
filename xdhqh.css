@@ -159,7 +159,7 @@ body {
 
 .swiper-slide img{
     width: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding-top: 0;
   }
   .swiper-slide p{
@@ -168,7 +168,7 @@ body {
     text-align: center;
     width: 20%;
     position: absolute;
-    margin-top: 58px;
+    margin-top: 42px;
     letter-spacing: 1px;
     font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB;
   }
