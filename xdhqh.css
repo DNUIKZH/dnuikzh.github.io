@@ -55,6 +55,9 @@ body {
     border: none;
     padding-left: 10vw;
     position: absolute;
+    font-size: 15px;
+    padding-top: 1px;
+    letter-spacing: 2px;
 }
 .xj {
     width: 26px;
@@ -68,7 +71,7 @@ body {
     width: 20px;
     height: 18px;
     position: absolute;
-    top: .7vh;
+    top: 6px;
     left: 6.5vw;
 }
 
