@@ -1,0 +1,1425 @@
+.ls {
+    color: black;
+    font-size: 1.5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-content {
+    background-image: repeating-linear-gradient(to bottom right, rgb(251, 154, 154), 2em, rgb(250, 239, 239), rgb(248, 167, 167));
+    height: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.tab-content .fy {
+    color: rgb(236, 243, 250);
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 30vh;
+    display: none;
+    height: 1000px;
+}
+
+/* 首页 整个框架 大div  上方代码 0503  康智泓 */
+.pl {
+    width: 20vw;
+    z-index: 9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 首页版块 CSS 0503 康智泓*/
+.contral {
+    width: 100%;
+    height: 1020px;
+}
+
+.parent {
+    position: absolute;
+    width: 8%;
+    top: 38px;
+
+}
+
+.search {
+    width: 82vw;
+    height: 30px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    padding-left: 10vw;
+    position: absolute;
+    font-size: 15px;
+    padding-top: 1px;
+    letter-spacing: 2px;
+}
+
+.xj {
+    width: 26px;
+    height: 28px;
+    position: absolute;
+    top: 1px;
+    right: -75vw;
+}
+
+.ss {
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 6.5vw;
+    z-index: 20;
+}
+
+.sm {
+    width: 25px;
+    position: absolute;
+    height: 25px;
+    top: 2px;
+    right: -85vw;
+}
+
+.jd {
+    position: absolute;
+    width: 35px;
+    top: 1px;
+    left: 3vw;
+    z-index: 10;
+}
+
+.xx {
+    position: absolute;
+    width: 45px;
+    top: -2px;
+    right: 1.5vw;
+    z-index: 10;
+}
+
+.hd {
+    position: absolute;
+    width: 45px;
+    top: -3px;
+    right: 10vw;
+    z-index: 10;
+}
+
+/* 上方滑动导航 */
+.fy {
+    width: 100%;
+    position: relative;
+}
+
+.hddh {
+    position: absolute;
+    top: 3px;
+    width: 100%;
+}
+
+:root {
+    --main-color: #ffffff;
+    --syNav-item-width: 50px;
+    --syNav-item-height: 15px;
+    --syNav-item-border-width: 6px;
+}
+
+
+.syNav {
+    position: relative;
+    display: flexbox;
+    background: rgb(255, 233, 233);
+    border-radius: 24px;
+    font-size: 0;
+    padding: var(--syNav-item-border-width);
+    z-index: 1;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.syNav-item {
+    width: var(--syNav-item-width);
+    height: var(--syNav-item-height);
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.syNav>input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.syNav>input[type="radio"]:checked+label {
+    color: rgb(255, 0, 0);
+}
+
+.tracker {
+    width: 33%;
+    height: 27px;
+    background: var(--main-color);
+    z-index: -1;
+    position: absolute;
+    left: 5px;
+    top: 2.7px;
+    border-radius: 25px;
+    transition: transform .3s ease-in-out;
+}
+
+#syNav-item-opt-2:checked~.tracker {
+    transform: translateX(calc(92%));
+}
+
+#syNav-item-opt-3:checked~.tracker {
+    transform: translateX(calc(185%));
+}
+
+/* 滑动导航结束 */
+.syTabtext {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 68px;
+    left: 0;
+}
+
+.syTabtext li {
+    float: left;
+    color: black;
+    width: 11.8vw;
+    height: 2.8px;
+    font-size: 16px;
+    margin: 8px 0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.fenlei img {
+    width: 15px;
+    height: 17px;
+    float: right;
+    top: 10px;
+    right: 12vmin;
+    position: absolute;
+}
+
+.syTabtext .fenlei p {
+    /* width: 12vw;
+    height: 3vh; */
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-left: 0;
+    right: 3vw;
+    padding-top: 8px;
+    position: absolute;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.syBackground {
+    width: 100%;
+    height: 1080px;
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(238, 238, 238), rgb(238, 238, 238), rgb(238, 238, 238));
+    position: absolute;
+    top: 110px;
+}
+
+.ls {
+    color: rgb(184, 182, 182);
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    left: 10;
+    width: 100%;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 160px;
+}
+
+.swiper-slide li {
+    width: 20%;
+    float: left;
+    height: 70px;
+    z-index: 10;
+    padding: 0;
+    margin-top: 0;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB;
+    /* padding-bottom: 10px; */
+}
+
+.swiper-slide img {
+    width: 45px;
+    margin: 8px auto 5px auto;
+    display: block;
+}
+
+.jdicon .swiper-pagination {
+    top: 146px;
+    width: 100%;
+    font-size: 1px;
+
+}
+
+/* 分页器div盒子 */
+
+.jdicon .swiper-pagination-bullet-active {
+    background-color: red;
+    width: 1.2rem;
+    border-radius: 10px;
+}
+
+.exhibition.left {
+    background-image: url(https://cdnjson.com/images/2022/12/07/0c6b48868b72ccc703b03d56faaf8ae8.png);
+    background-size: 130% 130%;
+    background-repeat: no-repeat;
+}
+
+.exhibition.right {
+    background-image: url(https://cdnjson.com/images/2022/12/07/399f05aa56e90fb2849ba88728e57208.png);
+    background-size: 130% 130%;
+    background-repeat: no-repeat;
+}
+
+.exhibition {
+    color: black;
+    width: 45%;
+    height: 120px;
+    float: left;
+    border-radius: 8px;
+    margin-left: 3vw;
+    margin-top: 10px;
+    position: relative;
+}
+
+.exhibition p {
+    font-size: 16px;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 2px;
+    top: 5px;
+    left: 10px;
+    font-family: Arial, Microsoft YaHei, “黑体”, “宋体”, sans-serif;
+}
+
+.exhibition .swiper {
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    left: 5px;
+}
+
+/* .ms {
+    width: 80px;
+    position: absolute;
+    bottom: 5.5px;
+    right: 1vw;
+} */
+.exhibition img {
+    width: 80px;
+}
+
+.exhibition .imgright {
+    height: 88px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.exhibition .imgleft {
+    height: 88px;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bkbm {
+    font-size: 14px;
+    height: 18px;
+    color: #fff;
+    width: 80px;
+    border-radius: 5px;
+    position: absolute;
+    left: 90px;
+    top: 7px;
+    background-color: rgb(255, 38, 0);
+}
+
+/* 自由导航 */
+.syFreedom {
+    width: 92.5%;
+    color: black;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 0 auto;
+    position: absolute;
+    top: 560px;
+    left: 3vw;
+    text-align: right;
+}
+
+.syFreedom .swiper {
+    height: 30px;
+}
+
+.syFreedom .swiper-slide {
+    background-color: #fff;
+    height: 30px;
+    margin-right: 0;
+    border-radius: 8px;
+}
+
+.syFreedom .swiper-slide img {
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.syFreedom .swiper-slide a {
+    padding-right: 13px;
+}
+
+.syFreedom .swiper-wrapper {
+    height: 28px;
+}
+
+/* 第三版 */
+.syCarousel {
+    /* background-color: rgb(255, 168, 168); */
+    position: absolute;
+    width: 100%;
+    top: 600px;
+}
+
+.carouselleft {
+    width: 50%;
+    /* background-color: #fff; */
+    height: 390px;
+    float: left;
+}
+
+.carouselright {
+    width: 50%;
+    /* background-color: #fff; */
+    height: 390px;
+    float: left;
+}
+
+.b1 {
+    width: 92%;
+    height: 250px;
+    border-radius: 7px;
+    margin: 0 5px 10px auto;
+}
+
+.small {
+    width: 92%;
+    margin: 0 5px 10px auto;
+    height: 120px;
+    border-radius: 7px;
+    background-color: rgb(255, 85, 77);
+    position: relative;
+}
+
+.b2 {
+    width: 92%;
+    height: 250px;
+    border-radius: 7px;
+    margin: 0 auto 10px 5px;
+    background-color: rgb(255, 85, 77);
+    position: relative;
+}
+
+.s2 {
+    margin: 0 auto 10px 5px;
+}
+
+.b1 .swiper {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.mySwiper4 .swiper-pagination {
+    font-size: 1px;
+    bottom: 1px;
+}
+
+.mySwiper4 .swiper-pagination-bullet-active {
+    background-color: rgb(255, 2, 2);
+    width: 1.2rem;
+    border-radius: 10px;
+}
+
+.mySwiper4 img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.texttop {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    float: left;
+}
+
+.texttopp {
+    width: 100%;
+    height: 28px;
+    margin-top: 5px;
+    float: left;
+}
+
+.Inline {
+    /* background-color: #fff; */
+    width: 90%;
+    margin: auto;
+    height: 80%;
+}
+
+I2 {
+    width: 90%;
+    margin: auto;
+    height: 80%;
+}
+
+.Inliner {
+    width: 48%;
+    height: 85px;
+    background-color: #fff;
+    margin-top: 3px;
+    float: left;
+    border-radius: 5px;
+}
+
+.Inlinerr {
+    width: 45%;
+    height: 100px;
+    background-color: #fff;
+    margin-top: 6px;
+    float: left;
+    border-radius: 5px;
+    margin-left: 1.5vw;
+}
+
+.Inliner img {
+    width: 100%;
+    height: 100%;
+}
+
+.Inlinerr img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* 新品版块 CSS 0503 康智泓*/
+.xinpin {
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(242, 242, 255), rgb(242, 242, 255));
+}
+
+.xinpinCarousel {
+    background-color: rgba(255, 255, 255, .5);
+    width: 100%;
+    height: 250px;
+    border-radius: 0 0 28px 28px;
+}
+
+.mySwiper5 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mySwiper5 .swiper-pagination {
+    text-align: right;
+    position: absolute;
+    bottom: 18px;
+    width: 95%;
+    font-size: 0px;
+}
+
+.mySwiper5 .swiper-pagination-bullet {
+    width: 10px;
+    height: 5px;
+    border-radius: 15px;
+}
+
+.mySwiper5 .swiper-pagination-bullet-active {
+    background-color: rgb(79, 79, 79);
+    border-radius: 15px;
+}
+
+.mySwiper5 img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 28px 28px;
+}
+
+
+
+/*新品 上方滑动导航 */
+.xpHddh {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+:root {
+    --main-color: #ffffff;
+    --syNav-item-width: 50px;
+    --syNav-item-height: 20px;
+    --syNav-item-border-width: 6px;
+}
+
+
+.xpNav {
+    position: relative;
+    display: flexbox;
+    background: rgba(37, 37, 37, 0.45);
+    border-radius: 24px;
+    font-size: 0;
+    padding: var(--syNav-item-border-width);
+    z-index: 1;
+    width: 155px;
+    margin: 0 auto;
+}
+
+.xpNav-item {
+    width: var(--syNav-item-width);
+    height: var(--syNav-item-height);
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.xpNav>input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.xpNav>input[type="radio"]:checked+label {
+    color: rgb(0, 0, 0);
+}
+
+.xpTracker {
+    width: 33%;
+    height: 28px;
+    background-image: linear-gradient(90deg, rgb(242, 225, 205), rgb(253, 253, 241));
+    z-index: -1;
+    position: absolute;
+    left: 5px;
+    top: 2.5px;
+    border-radius: 25px;
+    transition: transform .3s ease-in-out;
+}
+
+#xpNav-item-opt-2:checked~.xpTracker {
+    transform: translateX(calc(92%));
+}
+
+#xpNav-item-opt-3:checked~.xpTracker {
+    transform: translateX(calc(185%));
+}
+
+/* 上方文字 */
+.xpTabtext {
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    width: 100%;
+    height: 36px;
+    top: 250px;
+    left: 0;
+}
+
+.xpTabtext li {
+    float: left;
+    color: black;
+    width: 18%;
+    height: 10px;
+    font-size: 16px;
+    margin: 8px 0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.xpTabtext a {
+    width: 10px;
+    height: 2.8px;
+}
+
+.xpTabtext .show {
+    font-weight: bold;
+}
+
+.fenlei1 img {
+    width: 15px;
+    height: 17px;
+    float: right;
+    top: 10px;
+    right: 2vmin;
+    position: absolute;
+
+}
+
+.xinpinGuanzhu {
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 25px;
+    font-size: 17px;
+    text-align: center;
+    background-color: rgba(202, 202, 202, .2);
+    color: aliceblue;
+    border-radius: 20px;
+    line-height: 25px;
+    top: 24px;
+    left: 3vw;
+}
+
+.xinpin p {
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    right: 10px;
+    top: 8px;
+    font-size: 40px;
+    color: rgb(250, 246, 246);
+}
+
+.xpPhone {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 290px;
+}
+
+.mySwiper6 {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper6 img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.box {
+    position: fixed;
+    right: 15px;
+    bottom: 130px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    font-size: 5px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    z-index: 30;
+    animation: kzhout .3s 1;
+    /* animation: fadeIn .2s 1; */
+    animation-fill-mode: forwards;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes kzhout {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.big img {
+    width: 100%;
+    height: 100%;
+}
+
+.xpLs {
+    z-index: 20;
+    color: rgb(196, 196, 196);
+    bottom: 120px;
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* 逛css区域 */
+
+.fy3 {
+    position: relative;
+}
+
+#head {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 6;
+}
+
+.guang {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+}
+
+/* 上方标题tab */
+.gTabtext {
+    padding: 0;
+    margin-top: 6px;
+    z-index: 20;
+    width: 100%;
+    height: 36px;
+    top: 250px;
+    left: 0;
+}
+
+.gTabtext li {
+    float: left;
+    display: inline;
+    color: black;
+    width: 32%;
+    height: 10px;
+    font-size: 18px;
+    margin: 8px 0;
+    text-align: center;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.gTabtext a {
+    width: 10px;
+    height: 2.8px;
+}
+
+.gTabtext .show {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.gItem {
+    width: 50%;
+    margin: 0 auto;
+    display: table;
+
+
+}
+
+.guangSearch {
+    width: 100%;
+}
+
+.gSearch {
+    width: 87%;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: 1.5px solid rgb(255, 0, 0);
+    padding-left: 10vw;
+    position: absolute;
+    font-size: 17px;
+    left: 5px;
+    letter-spacing: 2px;
+    z-index: 4;
+    top: 13px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.ss2 {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 23.5px;
+    left: 4.5vw;
+    z-index: 2;
+}
+
+.guangSearch button {
+    z-index: 5;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    width: 80px;
+    height: 43px;
+    border-radius: 30px;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+
+.gParent {
+    width: 100%;
+    position: absolute;
+    top: 38px;
+}
+
+/* 上方fixer标题    */
+
+.gTabtext2 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 50px;
+    left: 0;
+    height: 45px;
+    z-index: 5;
+}
+
+.gTabtext2 li {
+    float: left;
+    color: black;
+    width: 17.5%;
+    height: 2.8px;
+    font-size: 20px;
+    margin: 8px 0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.fenlei img {
+    width: 15px;
+    height: 17px;
+    float: right;
+    top: 10px;
+    right: 12vmin;
+    position: absolute;
+}
+
+.gTabtext2 .fenlei p {
+    font-size: 35px;
+    color: rgb(10, 10, 10);
+    float: right;
+    margin-left: 0;
+    right: 4vw;
+    padding-top: 1.5px;
+    position: absolute;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.gTabtext2 .show {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 29px;
+}
+
+.gCarousel {
+    width: 100%;
+    height: 1500px;
+    background-color: rgb(237, 237, 237);
+    position: absolute;
+    top: 150px;
+    z-index: 0;
+    border-radius: 12px 012px 0;
+}
+
+.carouselfull {
+    position: absolute;
+    width: 100%;
+    top: 12px;
+}
+
+#video1 {
+    width: 100%;
+    height: 100%;
+
+}
+
+.video {
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.gCarousel .big {
+    background-color: #fff;
+    height: 270px;
+}
+
+.videofont {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+}
+
+.ifont {
+    width: 90%;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+    height: 70px;
+    padding-top: 10px;
+    margin: 0 auto;
+    position: relative;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.ifont img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ifont p {
+    position: absolute;
+    bottom: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(181, 181, 181);
+    width: 80%;
+    margin-left: 30px;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.userInformation img {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgb(116, 116, 116);
+    top: 8px;
+    left: 15px;
+}
+
+/* --------------------------------------------------------------- */
+/*  购物车部分css */
+.pay {
+    background-image: linear-gradient(180deg, rgb(249, 249, 249), rgb(238, 238, 238), rgb(238, 238, 238), rgb(238, 238, 238));
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+}
+
+.pay p {
+    color: black;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.payDelivery {
+    width: 125px;
+    height: 20px;
+    color: rgb(149, 149, 149);
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(190, 190, 190, .2);
+    position: absolute;
+    top: 22px;
+    left: 100px;
+    padding-left: 15px;
+}
+
+#payDy {
+    width: 16px;
+    position: absolute;
+    top: 24px;
+    left: 112px;
+
+}
+
+#payGd {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 27px;
+}
+
+.payCar {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+}
+
+.payCar img {
+    width: 50px;
+    position: absolute;
+    left: 20vw;
+    top: 20px;
+}
+
+.payCar p {
+    font-size: 16px;
+    font-weight: none;
+    color: rgb(164, 164, 164);
+    position: absolute;
+    left: 36vw;
+    top: 32px;
+    letter-spacing: 1px;
+}
+
+.payCar2 {
+    width: 260px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.payCar2 li {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    border: .5px solid rgb(144, 144, 144);
+    letter-spacing: 2.53px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+
+.payCar3 {
+    width: 95%;
+    height: 240px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 35px;
+    position: relative;
+}
+
+.payCar3 p {
+    color: black;
+}
+
+#tjbd {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#fh {
+    position: absolute;
+    top: 10px;
+    margin-left: 190px;
+    width: 20px;
+}
+
+.mySwiper7 {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 40px;
+
+}
+
+
+.mySwiper7 .swiper-slide {
+    width: 100%;
+    background-color: rgba(229, 229, 229, .3);
+    border-radius: 30px;
+}
+
+.payFull {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+}
+
+.payFull li {
+    width: 30%;
+    height: 135px;
+    float: left;
+    margin-left: 2.5vw;
+    position: relative;
+    border-radius: 12px;
+}
+
+.payFull img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.payCoupon {
+    width: 100%;
+    height: 310px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 20px;
+    color: black;
+    font-size: 17px;
+    line-height: 50px;
+    position: relative;
+}
+
+.payCoupon .hb {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.payCoupon .yhj {
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.payCoupon .yhj2 {
+    top: 160px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.payExhibition {
+    margin-top: 60px;
+    color: black;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.payCar .see {
+    z-index: 20;
+    position: absolute;
+    left: 0;
+    top: 745px;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+}
+
+.payExhibition img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.payExhibition .b2 {
+    background-color: white;
+}
+
+.pay .gwcLs {
+    position: absolute;
+    left: 0;
+    top: 1120px;
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+    width: 100%;
+    height: 20px;
+    font-weight: normal;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 我的部分css代码 */
+/* ajax 头像和名字css */
+.mineHead {
+    width: 100%;
+    /* background-color: #fff; */
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+
+.userInformationn2 img {
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+#username {
+    color: black;
+    width: 280px;
+    font-weight: bold;
+    height: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+
+.subscript {
+    color: rgb(42, 42, 42);
+    font-weight: normal;
+    font-size: 13px;
+    position: absolute;
+    top: 88px;
+}
+
+#uservalue {
+    left: 98px;
+}
+
+#userstudent {
+    left: 185px;
+}
+
+#uesrfamil {
+    left: 265px;
+    top: 87px;
+}
+
+#shezhi {
+    position: absolute;
+    right: 0;
+    width: 140px;
+    top: 12px;
+}
+
+.fy5 {
+    background-image: repeating-linear-gradient(to right, rgb(255, 255, 255), .8em, rgb(249, 231, 231), rgb(255, 239, 239), rgb(255, 255, 255));
+}
+
+.fy .PLUS {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-top: 120px;
+    z-index: 20;
+}
+
+.mine {
+    width: 100%;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(243, 240, 240), rgb(238, 238, 238));
+    height: 1200px;
+    position: absolute;
+    top: 122px;
+    z-index: 0;
+}
+
+.mineExpress {
+    width: 95%;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.mineExpress img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.mineWallet {
+    width: 95%;
+    height: 85px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.mineWallet img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.mineCommodity{
+    width: 100%;
+    margin-top: 20px;
+}
+.mineCommodity .big{
+    background-color: #fff;
+}
+.mineText{
+    width: 100%;
+    position: absolute;
+    bottom: 85px;
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+}
