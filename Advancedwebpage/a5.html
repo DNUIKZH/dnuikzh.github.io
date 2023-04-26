@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22201010503 康智泓</title>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -.8em;
+            bottom: 3em;
+            fill: currentColor;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        *{-webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+        body,
+        ul,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .bnav {
+            position: fixed;
+            /* 固定定位 */
+            left: 0;
+            bottom: 0;
+            background-color: rgb(246, 246, 246);
+            width: 100%;
+            z-index: 9;
+            /* 用来设定固定定位的z轴 */
+        }
+
+        body {
+            margin-bottom: 50px;
+            /* 和固定定位一起用 */
+        }
+
+        .bnav>ul {
+            display: flex;
+            /* 要给到效果的父元素 */
+        }
+
+        .bnav li {
+            width: 20%;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 36px;
+            margin: -.2em 0;
+        }
+
+        .bnav p {
+            font-size: 14px;
+            color: #000;
+            line-height: 2em;
+            letter-spacing: 1.5px;
+            /* 字体间距 */
+        }
+        .t4{text-indent:.2em}
+        .t2{text-indent:.05em}
+        .t3{text-indent:.02em}
+
+        .dot {
+            width: .5em;
+            height: .5em;
+            background-color: #f00;
+            position: fixed;
+            right: 10em;
+            top: .4em;
+            border-radius: 50%;
+            /* 圆角 */
+            z-index: 9;
+        }
+
+        .bnav ul li.active a .c{
+            position: fixed;
+            font-size: 30px;
+            transform: scale(1);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -2em;
+            margin-left: -1.01em;
+        }
+        .bnav ul li .c{
+            position: fixed;
+            transform: scale(0);
+            margin-bottom: -3em;
+            margin-left: -1.01em;
+        }
+        .bnav ul li.active a .nc{
+            font-size: 30px;
+            /* 图标上移 */
+            color: red;
+            transform: scale(0);
+            transition: 0.35s;
+        }
+
+        .bnav ul li a .text {
+            /* 绝对定位 */
+            position: flexed;
+            font-size: 12px;
+            bottom: 0px;
+            /* 设置过渡 */
+            transition: 0.5s;
+            /* 默认隐藏 */
+            transform: scale(0);
+        }
+        .bnav ul li.active a .text {
+            /* 选中,文字显示 */
+            transform: scale(1);
+            margin: 1px;
+        }
+    </style>
+    <script src="../font/iconfont.js"></script>
+    <link rel="shortcut icon" href="title.ico">
+     <link rel="stylesheet" href="./xdhqh.css">
+     <script src="./xdh.js"></script>
+</head>
+
+<body>
+ <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="howtolove.mp3">
+
+你的浏览器不支持音乐插件.
+
+</audio>
+      <nav class="bnav">
+        <ul class="itemz">
+            <li class="item">
+                <a class="a1" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-shouye4"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-shouyefull3"></use>
+                    </svg>
+                    <p class="text t1">首页</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a2" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-xinpin3"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-xinpinfull2"></use>
+                    </svg>
+                    <p class="text t2">新品</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a3" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-guang"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-guangfull2"></use>
+                    </svg>
+                    <p class="text t3">逛</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a4" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-gouwuche1"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-gouwuchefull4"></use>
+                    </svg>
+                    <p class="text t4">购物车</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a5" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-User"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-Userfull"></use>
+                    </svg>
+                    <!--  <span class="dot"></span> -->
+                    <p class="text t5">我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contral">
+        <div class="tab-content">
+            <div style="display:block;">首页</div>
+            <div>新品</div>
+            <div>逛</div>
+            <div>购物车</div>
+            <div>我的</div>
+        </div>
+    </div>
+    <script>
+      let items = document.querySelectorAll(".item");
+        function setActive() {
+            items.forEach((item) => {
+            item.classList.remove("active");
+            })
+            this.classList.add("active");
+        }
+        items.forEach((item) => {
+            item.addEventListener("click", setActive);
+        })
+       
+    </script>
+</body>
+
+</html>

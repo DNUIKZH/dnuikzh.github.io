@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>22201010503 康智泓</title>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -.8em;
+            bottom: 3em;
+            fill: currentColor;
+            overflow: hidden;
+            transition: 0.5s;
+            z-index: 9;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        body,
+        ul,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .bnav {
+            position: fixed;
+            /* 固定定位 */
+            left: 0;
+            bottom: 0;
+            background-color: rgb(246, 246, 246);
+            width: 100%;
+            z-index: 9;
+            /* 用来设定固定定位的z轴 */
+        }
+
+        body {
+            margin-bottom: 50px;
+            /* 和固定定位一起用 */
+        }
+
+        .bnav>ul {
+            display: flex;
+            /* 要给到效果的父元素 */
+        }
+
+        .bnav li {
+            width: 20%;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 36px;
+            margin: -.2em 0;
+        }
+
+        .bnav p {
+            font-size: 14px;
+            color: #000;
+            line-height: 2em;
+            letter-spacing: 1.5px;
+            /* 字体间距 */
+        }
+
+        .t4 {
+            text-indent: .2em
+        }
+
+        .t2 {
+            text-indent: .05em
+        }
+
+        .t3 {
+            text-indent: .02em
+        }
+
+
+        .bnav ul li.active a .c {
+            position: fixed;
+            font-size: 30px;
+            transform: scale(1);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -2em;
+            margin-left: -1.01em;
+        }
+
+        .bnav ul li .c {
+            position: fixed;
+            transform: scale(0);
+            margin-bottom: -3em;
+            margin-left: -1.01em;
+        }
+
+        .bnav ul li.active a .nc {
+            font-size: 30px;
+            /* 图标上移 */
+            color: red;
+            transform: scale(0);
+            transition: 0.35s;
+        }
+
+        .bnav ul li a .text {
+            /* 绝对定位 */
+            position: flexed;
+            font-size: 12px;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+            bottom: 0px;
+            /* 设置过渡 */
+            transition: 0.5s;
+            /* 默认隐藏 */
+            transform: scale(0);
+        }
+
+        .bnav ul li.active a .text {
+            /* 选中,文字显示 */
+            transform: scale(1);
+            margin: 1px;
+        }
+        .contral ul li.active a  {
+            font-weight: bold;
+            transition: .2s;
+        }
+        /* 优先级最高才能初始就显示 */
+        .syTabtext .syItem .show{
+            font-weight: bold;
+            transition: 0.2s;
+        }
+    </style>
+    <link rel="stylesheet" href="./xdhqh.css">
+    <script src="../font/iconfont.js"></script>
+    <script src="./xdh.js"></script>
+</head>
+
+<body>
+    <nav class="bnav">
+        <ul class="itemz">
+            <li class="item active">
+                <a class="a1" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-shouye4"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-shouyefull3"></use>
+                    </svg>
+                    <p class="text t1">首页</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a2" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-xinpin3"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-xinpinfull2"></use>
+                    </svg>
+                    <p class="text t2">新品</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a3" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-guang"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-guangfull2"></use>
+                    </svg>
+                    <p class="text t3">逛</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a4" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-gouwuche1"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-gouwuchefull4"></use>
+                    </svg>
+                    <p class="text t4">购物车</p>
+                </a>
+            </li>
+            <li class="item">
+                <a class="a5" href="#">
+                    <svg class="icon nc" aria-hidden="true">
+                        <use xlink:href="#icon-User"></use>
+                    </svg>
+                    <svg class="icon c" aria-hidden="true">
+                        <use xlink:href="#icon-Userfull"></use>
+                    </svg>
+                    <!--  <span class="dot"></span> -->
+                    <p class="text t5">我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contral">
+        <div class="tab-content">
+            <div style="display:block;" class="fy">
+                <img src="../jdimg/京东.jpeg" class="jd">
+                <span class="sySearch">
+                    <form action="" class="parent">
+                        <input type="text" class="search" placeholder="京东商城">
+                        <a href="#"><img src="../jdimg/相机.png" alt="" class="xj"></a>
+                        <a href="#"><img src="../jdimg/搜索小.png" alt="" class="ss"></a>
+                        <a href="#"><img src="../jdimg/扫码.png" alt="" class="sm"></a>
+                    </form>
+                </span>
+                <span class="syTabtext">
+                    <ul class="syItem" >
+                        <li class="show" style="padding-left: 1vw;"><a href="#">推荐</a></li>
+                        <li ><a href="#">手机</a></li>
+                        <li ><a href="#">家电</a></li>
+                        <li ><a href="#">食品</a></li>
+                        <li ><a href="#">生鲜</a></li>
+                        <li ><a href="#">数码</a></li>
+                        <li ><a href="#">电脑</a></li>
+                        <span class="fenlei"><img src="../jdimg/分类.png" alt="分类" ><p>分类</p></span>
+                    </ul>
+                </span>
+                 <!-- 京东列表 -->
+                 <div class="syBackground">
+                    <div class="syShell">
+                        <ul class="lbs">
+                            <input type="radio" id="control-1"name="control" checked>
+                            <input type="radio" id="control-2"name="control">
+                            <input type="radio" id="control-3"name="control">
+                            <li class="lbbox">
+                                <div class="lb">
+                                    <ul>
+                                        <a href="https://h5.m.jd.com/babelDiy/Zeus/4JkCVz6z5RB4dBL7bZBwtGRiBLLw/index.html?hideTabbar=true"><li><img src="../jdDhimg/images2/京东超市.png"><p>京东超市</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/8tHNdJLcqwqhkLNA8hqwNRaNu5f/index.html"><li><img src="../jdDhimg/images2/京东电器.png"><p>京东电器</p></li></a>
+                                        <a href="https://h5.m.jd.com/babelDiy/Zeus/2mPT6i3AsiqRcsZPKSya8Atva2f7/index.html"><li><img src="../jdDhimg/images2/京东新百货.png"><p>京东新百货</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/4P9a2T9osR9JvtzHVaYTPvsecRtg/index.html"><li><img src="../jdDhimg/images2/免费水果.png"><p>免费水果</p></li></a>
+                                        <a href="https://daojia.jd.com/html/index/index.html?channel=jdapp"><li><img src="../jdDhimg/images2/京东到家.png"><p>京东到家</p></li></a>
+                                        <a href="https://prodev.m.jd.com/mall/active/N2p5dHzdwxnAqp182PVJmc5L5Se/index.html"><li><img src="../jdDhimg/images2/生活缴费.png"><p>生活·缴费</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/WDFXanZGBTUPMcNicUEZ8q8nhRF/index.html"><li><img src="../jdDhimg/images2/领京豆.png"><p>领京豆</p></li></a>
+                                        <a href="https://coupon.m.jd.com/center/getCouponCenter.action"><li><img src="../jdDhimg/images2/券后9.9.png"><p>券后9.9</p></li></a>
+                                        <a href="https://m.jr.jd.com/jmf/"><li><img src="../jdDhimg/images2/借钱.png"><p>借钱</p></li></a>
+                                        <a href="https://plogin.m.jd.com/login/login?appid=300&returnurl=https%3A%2F%2Fwq.jd.com%2Fpassport%2FLoginRedirect%3Fstate%3D1102519649549%26returnurl%3Dhttps%253A%252F%252Fplus.m.jd.com%252Findex&source=wq_passport"><li><img src="../jdDhimg/images2/PLUS会员.png"><p>PLUS会员</p></li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="lbbox">
+                                <div class="lb">
+                                    <ul>
+                                        <a href="https://pro.m.jd.com/mall/active/3YvKJrc4e4WK7aZ46j3h5UMCvEn4/index.html"><li><img src="../jdDhimg/images2/京东国际.png"><p>京东国际</p></li></a>
+                                        <a href="https://zpsy.jd.com/"><li><img src="../jdDhimg/images2/京东拍卖.png"><p>京东拍卖</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/4P9a2T9osR9JvtzHVaYTPvsecRtg/index.html"><li><img src="../jdDhimg/images2/京东生鲜.png"><p>京东生鲜</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/3d34Pm49obpjLEdhhagSZuM5QrwC/index.html"><li><img src="../jdDhimg/images2/沃尔玛.png"><p>沃尔玛</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/7buZFEUJouLZZywhvvRWkGNSRMS/index.html"><li><img src="../jdDhimg/images2/买车养车.png"><p>买车·养车</p></li></a>
+                                        <a href="https://prodev.m.jd.com/wq/active/2PScB9XGoNNPVKmNR7ua35wC5abT/index.html"><li><img src="../jdDhimg/images2/看病购药.png"><p>看病购药</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/LHGZv1DrGkva1jNpUkKFuNFN6oo/index.html"><li><img src="../jdDhimg/images2/拍拍二手.png"><p>拍拍二手</p></li></a>
+                                        <a href="https://plogin.m.jd.com/login/login?appid=300&returnurl=https%3A%2F%2Fwq.jd.com%2Fpassport%2FLoginRedirect%3Fstate%3D2887368021%26returnurl%3Dhttps%253A%252F%252Fplus.m.jd.com%252Findex&source=wq_passport"><li><img src="../jdDhimg/images2/种豆得豆.png"><p>种豆得豆</p></li></a>
+                                        <a href="https://lvxing.jd.com/?jdreactkey=JDReactLifeTravel&jdreactapp=JDReactLifeTravel&transparentenable=true&_fromType=baibaoxiang&_sourceType=1&_isWXMP=0"><li><img src="../jdDhimg/images2/京东旅行.png"><p>京东旅行</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/Y9FVe619hMoajzqpxky1CQQJAkk/index.html"><li><img src="../jdDhimg/images2/智能装机馆.png"><p>智能装机馆</p></li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li class="lbbox">
+                                <div class="lb">
+                                    <ul>
+                                        <a href="https://pro.m.jd.com/mall/active/zHUHpTHNTaztSRfNBFNVZscyFZU/index.html"><li><img src="../jdDhimg/images2/礼在京东.png"><p>礼在京东</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/KcfFqWvhb5hHtaQkS4SD1UU6RcQ/index.html?utm_source=pdappwakeupup_20170001"><li><img src="../jdDhimg/images2/京东京造.png"><p>京东京造</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/2btYJRGQbBERp23M6aXGwm1tve3X/index.html"><li><img src="../jdDhimg/images2/医药馆.png"><p>医药馆</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/3Af6mZNcf5m795T8dtDVfDwWVNhJ/index.html"><li><img src="../jdDhimg/images2/母婴馆.png"><p>童装馆</p></li></a>
+                                        <a href="https://sou.m.jd.com/bases/m/searchKeyword.htm?keyword=%E7%89%B9%E4%BA%A7%E9%A6%86&searchFrom=search&sf=12&as=1"><li><img src="../jdDhimg/images2/千线名品.png"><p>千县名品</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/oKAAQpTfmbKWmL338JdgxNDeWK2/index.html"><li><img src="../jdDhimg/images2/鞋靴馆.png"><p>鞋靴馆</p></li></a>
+                                        <a href="https://pro.m.jd.com/mall/active/icTjaGCfgvk53N36uZFX7WLBoTK/index.html"><li><img src="../jdDhimg/images2/个护馆.png"><p>个护馆</p></li></a>
+                                        <a href="#"></a><li><img src="../jdDhimg/images2/东东萌宠.png"><p>东东萌宠</p></li>
+                                        <a href="https://pro.m.jd.com/mall/active/3u1Q7ZjCfQKrRb52c623WNf3Cjz5/index.html"><li><img src="../jdDhimg/images2/京东图书馆.png"><p>京东图书馆</p></li></a>
+                                        <a href="https://m.jd.com/portal/app_center.shtml"><li><img src="../jdDhimg/images2/更多频道.png"><p>更多频道</p></li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <div class="controls-visible">
+                                <label for="control-1"></label>
+                                <label for="control-2"></label>
+                                <label for="control-3"></label>
+                            </div>
+                        </ul>
+                    </div>
+                    <p>首页</p>
+                    <p class="ls">暂时未做手机端滑动适配</p>
+                    <p class="ls">可以点击按钮切换 上方图标可点击</p>
+                     <p class="ls">未做预加载 首次加载会卡请刷新</p>
+                </div>
+            </div>
+            <div class="fy">
+                <p>新品</p>
+            </div>
+            <div class="fy">
+                <p>逛</p>
+            </div>
+            <div class="fy">
+                <p>购物车</p>
+            </div>
+            <div class="fy">
+                <p>我的</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let items = document.querySelectorAll(".item");
+        function setActive() {
+            items.forEach((item) => {
+                item.classList.remove("active");
+            })
+            this.classList.add("active");
+        }
+        items.forEach((item) => {
+            item.addEventListener("click", setActive);
+        })
+        //下导航遍历
+        var contral=document.getElementsByClassName("contral")[0];
+        var tabcontent=contral.querySelector(".tab-content");
+        var fy=tabcontent.querySelector(".fy");
+        var syTabtext=fy.querySelector(".syTabtext")
+        var syItem=syTabtext.querySelectorAll("li")
+
+        for(var i=0;i<syItem.length;i++){
+            syItem[i].index=i;//index 是自定义属性
+            syItem[i].onclick=function(){
+                for(var j=0;j<syItem.length;j++)[
+                    syItem[j].classList.remove("show")
+                ]
+                syItem[this.index].classList.add("show")
+            }
+
+        }
+        //首页字体循环
+    </script>
+</body>
+
+</html>
